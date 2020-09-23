@@ -27,7 +27,7 @@ export default function Home() {
               <img src="/my-image.jpg" alt="私の画像" />
             </Col>
               <Col className="col-12 line-height-350 text-center">
-                <h3 class="text-white">Thank you for visit!</h3>
+                <h3 class="text-white">Thank you!</h3>
                 <p class="text-white m-0">
                   Im frontend developer.</p>
                 <p class="text-white">
