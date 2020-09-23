@@ -12,7 +12,7 @@ export default function Home() {
       <Head>
         <title>home</title>
       </Head>
-      <Container className="h-100 w-75 mx-auto">
+      <Container className="h-100 w-100 mx-auto">
       <section id="top" className="h-10">
         <Link href="/profile/my-profile">
           <a className="upper-left">Profile</a>
@@ -21,9 +21,9 @@ export default function Home() {
           <a className="upper-right">My Works</a>
         </Link>
       </section>
-        <section id="center" className="h-75 line-height-700">
+        <section id="center" className="h-75 line-height-700 mt-2">
           <Row className="">
-            <Col className="col-12 mt-5 text-center">
+            <Col className="col-12 text-center">
               <img src="/my-image.jpg" alt="私の画像" />
             </Col>
               <Col className="col-12 line-height-350 text-center">
