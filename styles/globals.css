@@ -79,3 +79,11 @@ img {
 .pt-180 {
   padding-top: 180px;
 }
+
+.h-10 {
+  height: 10%;
+}
+
+.w-40 {
+  width: 40px !important;
+}
