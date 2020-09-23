@@ -34,32 +34,32 @@ img {
 
 .upper-left{
   position:fixed;
-  left:50px;
-  top:50px;
+  left:20px;
+  top:20px;
   transition:1s;
   opacity:0.7;
 }
 
 .lower-right{
   position:fixed;
-  right:50px;
-  bottom:50px;
+  right:20px;
+  bottom:20px;
   transition:1s;
   opacity:0.7;
 }
 
 .upper-right {
   position:fixed;
-  right:50px;
-  top:50px;
+  right:20px;
+  top:20px;
   transition:1s;
   opacity:0.7;
 }
 
 .lower-left {
   position:fixed;
-  left:50px;
-  bottom:50px;
+  left:20px;
+  bottom:20px;
   transition:1s;
   opacity:0.7;
 }
@@ -87,3 +87,42 @@ img {
 .w-40 {
   width: 40px !important;
 }
+
+@media screen and (min-width: 540px) {
+  .responsive-center-secction-margin {
+    margin-top: 100px !important;
+  }
+
+  .upper-left{
+    position:fixed;
+    left:50px;
+    top:50px;
+    transition:1s;
+    opacity:0.7;
+  }
+
+  .lower-right{
+    position:fixed;
+    right:50px;
+    bottom:50px;
+    transition:1s;
+    opacity:0.7;
+  }
+
+  .upper-right {
+    position:fixed;
+    right:50px;
+    top:50px;
+    transition:1s;
+    opacity:0.7;
+  }
+
+  .lower-left {
+    position:fixed;
+    left:50px;
+    bottom:50px;
+    transition:1s;
+    opacity:0.7;
+  }
+
+ }

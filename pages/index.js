@@ -11,6 +11,7 @@ export default function Home() {
     <div className="bg-color h-100">
       <Head>
         <title>home</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"></meta>
       </Head>
       <Container className="h-100 w-100 mx-auto">
       <section id="top" className="h-10">
@@ -21,7 +22,7 @@ export default function Home() {
           <a className="upper-right">My Works</a>
         </Link>
       </section>
-        <section id="center" className="h-75 line-height-700 mt-2">
+        <section id="center" className="h-75 line-height-700 responsive-center-secction-margin">
           <Row className="">
             <Col className="col-12 text-center">
               <img src="/my-image.jpg" alt="私の画像" />
