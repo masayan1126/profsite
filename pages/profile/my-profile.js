@@ -10,9 +10,9 @@ export default function showProfiles() {
         </Head>
         <h1>My Profile</h1>
         <div>
-          <img src="/myface.JPG" alt="私の画像" />
+          <img src="/my-image.jpg" alt="私の画像" />
         </div>
       </Layout>
     </div>
-  )
+  );
 }
