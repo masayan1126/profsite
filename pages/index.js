@@ -19,13 +19,13 @@ export default function Home() {
           <a className="upper-left">Profile</a>
         </Link>
         <Link href="/works/my-works">
-          <a className="upper-right">My Works</a>
+          <a className="upper-right">Works</a>
         </Link>
       </section>
         <section id="center" className="h-75 line-height-700 responsive-center-secction-margin">
           <Row className="">
             <Col className="col-12 text-center">
-              <img src="/my-image.jpg" alt="私の画像" />
+              <img className="top-img-size" src="/my-image.jpg" alt="私の画像" />
             </Col>
               <Col className="col-12 line-height-350 text-center">
                 <h3 class="text-white">Thank you!</h3>
@@ -55,7 +55,7 @@ export default function Home() {
         </section>
         <section id="bottom" className="h-10">
           <Link href="/skills/my-skills">
-          <a className="lower-left">My Skills</a>
+          <a className="lower-left">Skills</a>
         </Link>
           <Link href="/contact/contact">
             <a className="lower-right">Contact</a>

@@ -23,13 +23,31 @@ a {
   box-sizing: border-box;
 }
 
-img {
+.top-img-size {
   width: 70%;
   height: 80%;
   min-width: 200px;
   min-height: 200px;
   max-height: 370px;
   max-width: 320px;
+}
+
+.work-img-size {
+  width: 75% !important;
+  height: 100% !important;
+  /* min-width: 200px;
+  min-height: 200px;
+  max-height: 370px;
+  max-width: 320px; */
+}
+
+.works-img-size {
+  width: 100%;
+  height: 10%;
+  /* min-width: 200px;
+  min-height: 200px;
+  max-height: 370px;
+  max-width: 320px; */
 }
 
 .upper-left{
@@ -88,6 +106,22 @@ img {
   width: 40px !important;
 }
 
+.mt-100 {
+  margin-top: 100px;
+}
+
+@media screen and (min-width: 992px) {
+  .md-responsive-center-secction-margin {
+    margin-top: 50px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .md-responsive-center-secction-margin {
+    margin-top: 0px !important;
+  }
+}
+
 @media screen and (min-width: 540px) {
   .responsive-center-secction-margin {
     margin-top: 100px !important;
@@ -126,3 +160,26 @@ img {
   }
 
  }
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: all .2s ease-in-out;
+  opacity: 1;
+}
+.fade-exit {
+  opacity: 1; /* opacityの規定値は1だが、省略不可 */
+}
+.fade-exit-active {
+  transition: all .2s ease-in-out;
+  opacity: 0;
+}
+
+.text-daffodil {
+  color: #E6DF44;
+}
+
+.bg-daffodil {
+  background-color: #E6DF44 !important;
+}
