@@ -127,6 +127,7 @@ a {
     margin-top: 100px !important;
   }
 
+
   .upper-left{
     position:fixed;
     left:50px;
@@ -182,4 +183,10 @@ a {
 
 .bg-daffodil {
   background-color: #E6DF44 !important;
+}
+
+canvas {
+  margin: 0 auto;
+  max-height: 700px;
+  max-width: 700px;
 }
