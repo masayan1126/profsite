@@ -41,22 +41,11 @@ export default function showWorks() {
             <Carousel.Item>
               <img
                 className="d-block work-img-size mx-auto"
-                src="/My-fitness-img.JPEG"
+                src="/TAILLER-CASE-SHOP.JPEG"
                 alt="Third slide"
               />
+            </Carousel.Item>
 
-              <Carousel.Caption>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block work-img-size mx-auto"
-                src="/My-fitness-img.JPEG"
-                alt="Third slide"
-              />
-              <Carousel.Caption>
-              </Carousel.Caption>
-            </Carousel.Item>
           </Carousel>
           <Row className="">
             <Col className="mb-2 offset-2 offset-sm-0 offset-md-4 col-8 col-sm-6 col-md-4 col-lg-4"></Col>
