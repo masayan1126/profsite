@@ -5,8 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faStore } from "@fortawesome/free-solid-svg-icons";
+import PageTitle from '../../components/Title'
 
-export default function showWorks() {
+export default function showWorks(props) {
   return (
     <div className="bg-color h-100">
       <Head>
@@ -29,7 +30,7 @@ export default function showWorks() {
           id="center"
           className="h-75 line-height-700 mt-100 md-responsive-center-secction-margin"
         >
-          <h3 className="text-center mb-3">WORKS</h3>
+          <PageTitle title = { "Works" }/>
           <Carousel>
             <Carousel.Item>
               <img

@@ -32,6 +32,15 @@ a {
   max-width: 320px;
 }
 
+.prof-img-size {
+  width: 50%;
+  height: 90%;
+  /* min-width: 200px;
+  min-height: 200px; */
+  max-height: 370px;
+  max-width: 320px;
+}
+
 .work-img-size {
   width: 75% !important;
   height: 100% !important;

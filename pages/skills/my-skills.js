@@ -6,6 +6,7 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faStore } from "@fortawesome/free-solid-svg-icons";
 import SkillsChart from '../../components/skill-chart'
+import PageTitle from '../../components/Title'
 
 export default function showWorks() {
   return (
@@ -30,7 +31,7 @@ export default function showWorks() {
           id="center"
           className="h-75 line-height-700 mt-5 md-responsive-center-secction-margin"
         >
-          <h3 className="text-center mb-3">Skills</h3>
+          <PageTitle title={"Skills"} />
           <SkillsChart />
           <Row className="">
             <Col className="mb-2 offset-2 offset-sm-0 offset-md-4 col-8 col-sm-6 col-md-4 col-lg-4"></Col>
