@@ -28,15 +28,20 @@ export default function showWorks() {
         </section>
         <section
           id="center"
-          className="h-75 line-height-700 mt-100 md-responsive-center-secction-margin"
+          className="h-75 line-height-700
+          mt-2 mt-sm-5 mt-md-5 md-responsive-center-secction-margin"
         >
           <PageTitle title={"Profile"} />
-
           <Row className="">
-            <Col className="mt-5 mb-2 offset-1 offset-sm-0 offset-md-3  col-8 col-sm-6 col-md-4 col-lg-4">
+            <Col className="mb-2 offset-2 offset-sm-0 offset-md-0  col-8 col-sm-6 col-md-6 col-lg-6 text-right">
               <img className="prof-img-size" src="/my-image.jpg" alt="私の画像" />
             </Col>
-            <Col className="mb-2 offset-12 offset-sm-0 offset-md-12 col-12 col-sm-6 col-md-12 col-lg-4"></Col>
+            <Col className="mt-2 mt-sm-5 offset-3 offset-sm-0 offset-md-0 col-8 col-sm-6 col-md-6 col-lg-6 pl-0">
+              <h5 className="text-white ">Im Front end Dev.</h5>
+              <p className="text-white mb-0 font-size-p">Masaya Nishigaki</p>
+              <p className="text-white mb-0 font-size-p">Osaka City</p>
+              <p className="text-white mb-0 font-size-p">age 26</p>
+            </Col>
 
           </Row>
         </section>
