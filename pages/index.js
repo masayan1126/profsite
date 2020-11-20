@@ -25,30 +25,31 @@ export default function Home() {
         <section id="center" className="h-75 line-height-700 responsive-center-secction-margin">
           <Row className="">
             <Col className="col-12 text-center">
-              <img className="top-img-size" src="/my-image.jpg" alt="私の画像" />
+              <img className="top-img-size" src="/undraw_code_thinking_1jeh.svg" alt="" />
             </Col>
               <Col className="col-12 line-height-350 text-center">
-                <h3 class="text-white">Thank you!</h3>
-                <p class="text-white m-0">
+                <h3 class="text-black">Thank you!</h3>
+                <p class="text-black m-0">
                   Im frontend developer.</p>
-                <p class="text-white">
+                <p class="text-black">
                   This page is my profile site.</p>
+                <Button className="contact__button">問い合わせる</Button>
               </Col>
           </Row>
           <ul className="text-center p-0">
             <span className="mr-2">
             <Link href="https://twitter.com/masayanishigaki">
-                <FontAwesomeIcon icon={faTwitter} />
+                <FontAwesomeIcon className="icon" icon={faTwitter} />
               </Link>
             </span>
             <span className="mr-2">
               <Link href="https://www.instagram.com/masaya_nishigaki/">
-                <FontAwesomeIcon icon={faInstagram} />
+                <FontAwesomeIcon className="icon" icon={faInstagram} />
               </Link>
             </span>
             <span className="mr-1">
               <Link href="https://smartphonecaseshop.net/shop/">
-                <FontAwesomeIcon icon={faStore} />
+                <FontAwesomeIcon className="icon" icon={faStore} />
               </Link>
             </span>
           </ul>
