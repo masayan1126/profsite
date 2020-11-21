@@ -29,19 +29,19 @@ export default function showWorks() {
         <section
           id="center"
           className="h-75 line-height-700
-          md-responsive-center-secction-margin fadein__bottom__fast"
+          section__profile fadein__bottom__fast"
 
         >
           <PageTitle title={"Profile"} />
           <Row className="mx-auto">
-            <Col className="mx-auto pr-sm-0 col-12 col-sm-6 col-md-6 col-lg-6 img__profile">
+            <Col className="mx-auto col-12 col-sm-6 col-md-6 col-lg-6 img__profile">
               <img className="prof__img__size" src="/undraw_male_avatar_323b.svg" alt="私の画像" />
             </Col>
-            <Col className="col-12 col-sm-6 col-md-6 col-lg-6">
-              <h5 className="p__profile mb-0">Masaya Nishigaki</h5>
-              <p className="p__profile mb-0 font-size-p">Osaka City</p>
-              <p className="p__profile mb-0 font-size-p">age : 26</p>
-              <p className="p__profile mb-0 font-size-p">Javascript、PHPなど</p>
+            <Col className="col-12 col-sm-6 col-md-6 col-lg-6 p__profile">
+              <h5 className="mb-0">Masaya Nishigaki</h5>
+              <p className="mb-0 font-size-p">Osaka City</p>
+              <p className="mb-0 font-size-p">age : 26</p>
+              <p className="mb-0 font-size-p">Javascript、PHPなど</p>
 
             </Col>
 

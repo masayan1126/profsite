@@ -66,9 +66,10 @@ const submitForm = (username, email, inquiry) => {
             className="h-75 line-height-700 text-center
             mx-auto mt-1 fadein__bottom__fast"
         >
-            <PageTitle title={"Contact"} />
+
             <div className="login-page">
             <div className="form">
+              <PageTitle title={"Contact"} />
             <Form className="text-left">
               <Form.Group controlId="exampleForm.ControlInput1">
                 <Form.Label>お名前</Form.Label>

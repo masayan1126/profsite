@@ -160,12 +160,12 @@ a {
    }
 }
 
-/* @media (min-width: 768px) and (max-width: 991px){
-
-} */
-
 /* 縦向きモバイル */
 @media screen and (max-width: 575px) {
+  .page__title {
+    margin-bottom: 30px;
+  }
+
   .section__top {
     margin-top: 50px;
   }
@@ -182,7 +182,7 @@ a {
     margin-top: 10px;
   }
 
-    .service__title {
+  .service__title {
     font-size: 15px;
   }
 
@@ -190,10 +190,33 @@ a {
     font-size: 8px;
   }
 
+  .p__profile {
+    text-align: center;
+    font-size: 14px !important;
+  }
+
+  .prof__img__size {
+    width: 75%;
+    height: 75%;
+  }
+
+  .img__profile {
+    text-align: center;
+  }
+
+
+
 }
+
+
 
 /* 横向きモバイル */
 @media screen and (min-width: 576px) {
+
+  .page__title {
+    margin-bottom: 30px;
+  }
+
   .section__top {
     margin-top: 100px;
   }
@@ -210,6 +233,24 @@ a {
     margin-top: 10px;
   }
 
+  .section__profile {
+    margin-top: 130px;
+  }
+
+  .c__portfolio {
+    max-width: 500px !important;
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+  .service__title {
+    font-size: 18px;
+  }
+
+  .service__description {
+    font-size: 12px;
+  }
 }
 
 /* タブレット */
@@ -228,12 +269,24 @@ a {
 
   }
 
+  .img__profile {
+    text-align: right;
+  }
+
+  .c__portfolio {
+    max-width: 500px !important;
+  }
+
 }
 
 /* PC */
 @media screen and (min-width: 992px) {
   .section__service {
     margin-top: 10px;
+  }
+
+  .c__portfolio {
+    max-width: 500px !important;
   }
 
 }
@@ -256,18 +309,11 @@ a {
 }
 
 /* @media screen and (max-width: 765px) {
-  .img__profile {
-    text-align: center;
-  }
-
   .md-responsive-center-secction-margin {
     margin-top: 10px;
   }
 
-  .prof__img__size {
-    width: 80%;
-    height: 80%;
-  }
+
 }
 
 @media screen and (max-width: 766px) {
@@ -275,14 +321,8 @@ a {
     margin-top: 10px;
   }
 
-  .page__title {
-    margin-bottom: 30px;
-  }
 
-  .p__profile {
-    text-align: center;
-    font-size: 14px !important;
-  }
+
 
 }
 
@@ -291,13 +331,7 @@ a {
     margin-top: 40px;
   }
 
-  .service__title {
-    font-size: 18px;
-  }
 
-  .service__description {
-    font-size: 12px;
-  }
 
   .page__title {
     margin-bottom: 60px;
@@ -313,9 +347,7 @@ a {
 @media screen and (min-width: 768px) {
 
 
-  .img__profile {
-    text-align: right;
-  }
+
 
 
 }
