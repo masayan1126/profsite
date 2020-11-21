@@ -167,7 +167,7 @@ a {
 /* 縦向きモバイル */
 @media screen and (max-width: 575px) {
   .section__top {
-    margin-top: 10px;
+    margin-top: 50px;
   }
 
   .top__img__size {
