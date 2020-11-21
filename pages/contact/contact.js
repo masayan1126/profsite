@@ -30,7 +30,7 @@ const submitForm = (username, email, inquiry) => {
             + '【問い合わせ内容】\n' + inquiry
   };
 
-    const url = "https://hooks.slack.com/services/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"
+    const url = "https://hooks.slack.com/services/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"
 
     // fetchメソッドでフォームの内容をSlackのIncoming Webhook URL に送信する
     fetch(url, {
@@ -83,7 +83,7 @@ const submitForm = (username, email, inquiry) => {
               </Form.Group>
               <Form.Group controlId="exampleForm.ControlTextarea1">
                 <Form.Label>お問い合わせ内容</Form.Label>
-                    <Form.Control as="textarea" rows={3} value={inquiry}
+                    <Form.Control as="textarea" rows={2} value={inquiry}
                       onChange={inputInquiry}
                     />
               </Form.Group>
