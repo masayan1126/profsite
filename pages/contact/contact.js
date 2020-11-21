@@ -2,7 +2,8 @@ import PageTitle from '../../components/Title'
 import Link from "next/link";
 import Head from "next/head";
 import { Container, Row, Col, Form, Button, Carousel } from "react-bootstrap";
-import React,{useCallback, useState, useEffect} from 'react';
+import React, { useCallback, useState, useEffect } from 'react';
+import { webHookUrl } from "../../components/slack";
 
 export default function showContactForm() {
 
@@ -30,10 +31,8 @@ const submitForm = (username, email, inquiry) => {
             + '【問い合わせ内容】\n' + inquiry
   };
 
-    const url = "https://hooks.slack.com/services/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"
-
     // fetchメソッドでフォームの内容をSlackのIncoming Webhook URL に送信する
-    fetch(url, {
+    fetch(webHookUrl, {
         method: 'POST',
         body: JSON.stringify(payload)
     }).then(() => {
