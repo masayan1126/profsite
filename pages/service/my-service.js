@@ -75,8 +75,8 @@ export default function showWorks(props) {
           </Row>
         </section>
         <section id="bottom" className="h-10">
-          <Link href="/skills/my-skills">
-            <a className="lower-left">/ Skills</a>
+          <Link href="/portfolio/my-portfolio">
+            <a className="lower-left">/ Portfolio</a>
           </Link>
           <Link href="/contact/contact">
             <a className="lower-right">/ Contact</a>

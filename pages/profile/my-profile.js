@@ -19,8 +19,8 @@ export default function showWorks() {
       </Head>
       <Container className="h-100 w-100 mx-auto">
         <section id="top" className="h-10">
-          <Link href="/works/my-works">
-            <a className="upper-left">/ Works</a>
+          <Link href="/service/my-service">
+            <a className="upper-left">/ Service</a>
           </Link>
           <Link href="/">
             <a className="upper-right">/ Top</a>
@@ -47,8 +47,8 @@ export default function showWorks() {
           </Row>
         </section>
         <section id="bottom" className="h-10">
-          <Link href="/skills/my-skills">
-            <a className="lower-left">/ Skills</a>
+          <Link href="/portfolio/my-portfolio">
+            <a className="lower-left">/ Portfolio</a>
           </Link>
           <Link href="/contact/contact">
             <a className="lower-right">/ Contact</a>
