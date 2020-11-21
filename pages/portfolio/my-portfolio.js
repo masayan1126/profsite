@@ -66,7 +66,7 @@ export default function showWorks() {
                 <Col className="col-6 col-md-12 col-lg-12 h-100 mb-3">
                   <h5 className="mb-1 service__title text-left">Comming Soon</h5>
                   <p className="service__description text-left">Comming Soon</p>
-                  <img className="portfolio__img__size" src="/recette.png" alt="" />
+                  <img className="portfolio__img__size" src="/undraw_not_found_60pq.svg" alt="" />
                 </Col>
 
               </Row>
