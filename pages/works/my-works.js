@@ -17,7 +17,7 @@ export default function showWorks(props) {
           content="width=device-width,initial-scale=1.0"
         ></meta>
       </Head>
-      <Container className="h-100 w-100 mx-auto">
+      <Container className="h-100 w-100 mx-auto  text-center">
         <section id="top" className="h-10">
           <Link href="/profile/my-profile">
             <a className="upper-left">Profile</a>
@@ -28,33 +28,52 @@ export default function showWorks(props) {
         </section>
         <section
           id="center"
-          className="h-75 line-height-700 mt-100 md-responsive-center-secction-margin"
+          className="h-75 line-height-700 md-responsive-center-secction-margin"
         >
-          <PageTitle title = { "Works" }/>
-          <Carousel>
-            <Carousel.Item>
-              <img
-                className="d-block work-img-size mx-auto "
-                src="/My-fitness-img.JPEG"
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block work-img-size mx-auto"
-                src="/TAILLER-CASE-SHOP.JPEG"
-                alt="Third slide"
-              />
-            </Carousel.Item>
+          {/* <PageTitle title = { "Works" }/> */}
 
-          </Carousel>
-          <Row className="">
-            <Col className="mb-2 offset-2 offset-sm-0 offset-md-4 col-8 col-sm-6 col-md-4 col-lg-4"></Col>
-            <Col className="mb-2 offset-12 offset-sm-0 offset-md-12 col-12 col-sm-6 col-md-12 col-lg-4"></Col>
-            <Col className="mb-2 offset-2 offset-sm-0 col-8 col-sm-6 col-md-4 col-lg-4"></Col>
-            <Col className="offset-2 col-8 offset-sm-0 col-sm-6 col-md-4 col-lg-4"></Col>
-            <Col className="col-12"></Col>
+          <Row className="text-center">
+            <Col
+              className="mb-5 col-12 col-sm-12 mx-auto col-md-4 col-lg-4"
+            >
+              <Row className="">
+                <Col className="col-6 col-md-12 pr-0 col-lg-12">
+                  <img className="service__img__size" src="/undraw_web_devices_ad58.svg" alt="" />
+                </Col>
+                <Col className="col-6 col-md-12 col-lg-12">
+                  <h5 className="mt-5 service__title">Webアプリ開発</h5>
+                  <p>aaaaaaaaaaaaaaa</p>
+                </Col>
+              </Row>
+            </Col>
+
+            <Col
+              className="mb-5 col-12 col-sm-12 mx-auto col-md-4 col-lg-4"
+            >
+              <Row className="">
+                <Col className="col-6 col-md-12 pr-0 col-lg-12">
+                  <img className="service__img__size" src="/undraw_wordpress_utxt.svg" alt="" />
+                </Col>
+                <Col className="col-6 col-md-12 col-lg-12">
+                  <h5 className="mt-5 service__title">EC/HP/LP制作</h5>
+                  <p>aaaaaaaaaaaaaaaa</p>
+                </Col>
+              </Row>
+            </Col>
+
+            <Col className="mb-5 col-12 col-sm-12 mx-auto col-md-4 col-lg-4">
+              <Row className="">
+                <Col className="col-6 col-md-12 col-lg-12 pr-0">
+                  <img className="service__img__size" src="/undraw_search_engines_nn9e.svg" alt="" />
+                </Col>
+                <Col className="col-6 col-md-12 col-lg-12">
+                  <h5 className="mt-5 service__title">SE0対策</h5>
+                  <p>aaaaaaaaaaaaaaa</p>
+                </Col>
+              </Row>
+            </Col>
           </Row>
+
         </section>
         <section id="bottom" className="h-10">
           <Link href="/skills/my-skills">

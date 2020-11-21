@@ -26,6 +26,8 @@ export default function Home() {
           <Row className="">
             <Col className="col-12 text-center">
               <img className="top-img-size" src="/undraw_code_thinking_1jeh.svg" alt="" />
+
+
             </Col>
               <Col className="col-12 line-height-350 text-center">
                 <h3 class="text-black">Thank you!</h3>
@@ -33,7 +35,7 @@ export default function Home() {
                   Im frontend developer.</p>
                 <p class="text-black">
                   This page is my profile site.</p>
-                <Button className="contact__button">問い合わせる</Button>
+                <Button className="contact__button">お問い合わせ</Button>
               </Col>
           </Row>
           <ul className="text-center p-0">
