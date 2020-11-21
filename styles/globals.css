@@ -383,7 +383,7 @@ canvas {
   z-index: 1;
   background: #FFFFFF;
   margin: 0 auto;
-  padding: 25px;
+  padding: 20px;
   text-align: center;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.24);
 }

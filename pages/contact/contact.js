@@ -64,7 +64,7 @@ const submitForm = (username, email, inquiry) => {
         </section>
         <section
           id="center"
-          className="h-75 line-height-700  text-center mx-auto mt-3"
+          className="h-75 line-height-700  text-center mx-auto mt-1"
         >
             <PageTitle title={"Contact"} />
             <div className="login-page">
