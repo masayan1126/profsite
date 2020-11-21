@@ -3,7 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import { Container, Row, Col, Form, Button, Carousel } from "react-bootstrap";
 import React, { useCallback, useState, useEffect } from 'react';
-import { WEBHOOK_URL } from "../../webhook/webhookConfig";
+// import { WEBHOOK_URL } from "../../webhook/webhookConfig";
 
 export default function showContactForm() {
 
