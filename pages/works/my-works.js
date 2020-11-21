@@ -34,7 +34,7 @@ export default function showWorks(props) {
 
           <Row className="text-center">
             <Col
-              className="mb-5 offset-2 col-8 col-sm-12 mx-auto col-md-4 col-lg-4"
+              className="mb-5 offset-2 col-10 col-sm-12 mx-auto col-md-4 col-lg-4"
             >
               <Row className="mx-auto">
                 <Col className="col-6 col-md-12 pr-0 col-lg-12">
@@ -48,7 +48,7 @@ export default function showWorks(props) {
             </Col>
 
             <Col
-              className="mb-5 offset-2 col-8 col-sm-12 mx-auto col-md-4 col-lg-4"
+              className="mb-5 offset-2 col-10 col-sm-12 mx-auto col-md-4 col-lg-4"
             >
               <Row className="mx-auto">
                 <Col className="col-6 col-md-12 pr-0 col-lg-12">
@@ -61,7 +61,7 @@ export default function showWorks(props) {
               </Row>
             </Col>
 
-            <Col className="mb-5 offset-2 col-8 col-sm-12 mx-auto col-md-4 col-lg-4">
+            <Col className="mb-5 offset-2 col-10 col-sm-12 mx-auto col-md-4 col-lg-4">
               <Row className="mx-auto">
                 <Col className="col-6 col-md-12 col-lg-12 pr-0">
                   <img className="service__img__size" src="/undraw_search_engines_nn9e.svg" alt="" />
