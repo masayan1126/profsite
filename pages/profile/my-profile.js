@@ -38,9 +38,11 @@ export default function showWorks() {
               <img className="prof__img__size" src="/undraw_male_avatar_323b.svg" alt="私の画像" />
             </Col>
             <Col className="col-12 col-sm-6 col-md-6 col-lg-6">
-              <h5 className="p__profile mb-0">Name : Masaya Nishigaki</h5>
-              <p className="p__profile mb-0 font-size-p">From : Osaka City</p>
+              <h5 className="p__profile mb-0">Masaya Nishigaki</h5>
+              <p className="p__profile mb-0 font-size-p">Osaka City</p>
               <p className="p__profile mb-0 font-size-p">age : 26</p>
+              <p className="p__profile mb-0 font-size-p">Javascript、PHPなど</p>
+
             </Col>
 
           </Row>
