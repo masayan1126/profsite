@@ -30,7 +30,7 @@ export default function showWorks(props) {
           id="center"
           className="h-75 line-height-700 md-responsive-center-secction-margin"
         >
-          {/* <PageTitle title = { "Works" }/> */}
+          <PageTitle title = { "Works" }/>
 
           <Row className="text-center">
             <Col
