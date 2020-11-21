@@ -30,11 +30,11 @@ export default function showWorks(props) {
           id="center"
           className="h-75 line-height-700 md-responsive-center-secction-margin"
         >
-          <PageTitle title = { "Works" }/>
+          <PageTitle title = { "Service" }/>
 
           <Row className="text-center">
             <Col
-              className="mb-5 offset-2 col-10 col-sm-12 mx-auto col-md-4 col-lg-4"
+              className="mb-5 offset-2 col-10 col-sm-12 mx-auto col-md-4 col-lg-4 fadein__bottom__fast"
             >
               <Row className="mx-auto">
                 <Col className="col-6 col-md-12 pr-0 col-lg-12">
@@ -42,13 +42,13 @@ export default function showWorks(props) {
                 </Col>
                 <Col className="col-6 col-md-12 col-lg-12">
                   <h5 className="mt-4 service__title">Webアプリ開発</h5>
-                  <p className="service__description text-left">小中規模のアプリケーション開発</p>
+                  <p className="service__description text-left">小中規模のアプリケーション開発が可能です</p>
                 </Col>
               </Row>
             </Col>
 
             <Col
-              className="mb-5 offset-2 col-10 col-sm-12 mx-auto col-md-4 col-lg-4"
+              className="mb-5 offset-2 col-10 col-sm-12 mx-auto col-md-4 col-lg-4 fadein__bottom__middle"
             >
               <Row className="mx-auto">
                 <Col className="col-6 col-md-12 pr-0 col-lg-12">
@@ -56,24 +56,26 @@ export default function showWorks(props) {
                 </Col>
                 <Col className="col-6 col-md-12 col-lg-12">
                   <h5 className="mt-4 service__title">EC/HP/LP制作</h5>
-                  <p className="service__description text-left">WordPressでのサイト作成。一からの設計も可能です</p>
+                  <p className="service__description text-left">WordPressでのサイト作成(一からの設計も可)</p>
                 </Col>
               </Row>
             </Col>
 
-            <Col className="mb-5 offset-2 col-10 col-sm-12 mx-auto col-md-4 col-lg-4">
+            <Col className="mb-5 offset-2 col-10 col-sm-12 mx-auto col-md-4 col-lg-4 fadein__bottom__slow">
               <Row className="mx-auto">
                 <Col className="col-6 col-md-12 col-lg-12 pr-0">
                   <img className="service__img__size" src="/undraw_search_engines_nn9e.svg" alt="" />
                 </Col>
                 <Col className="col-6 col-md-12 col-lg-12">
                   <h5 className="mt-4 service__title">SE0対策</h5>
-                  <p className="service__description text-left">成果につながるデザイン設計とコーディングを実施</p>
+                  <p className="service__description text-left">成果につながるデザイン設計とコーディング</p>
                 </Col>
               </Row>
             </Col>
           </Row>
-
+           <Link href="/my-portfolio">
+            <a className="portfolio__link">/ ポートフォリオはこちら</a>
+          </Link>
         </section>
         <section id="bottom" className="h-10">
           <Link href="/skills/my-skills">

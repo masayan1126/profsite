@@ -16,20 +16,20 @@ export default function Home() {
       <Container className="h-100 w-100 mx-auto">
       <section id="top" className="h-10">
         <Link href="/profile/my-profile">
-          <a className="upper-left">Profile</a>
+          <a className="upper-left">/ Profile</a>
         </Link>
-        <Link href="/works/my-works">
-          <a className="upper-right">Works</a>
+        <Link href="/service/my-service">
+          <a className="upper-right">/ Service</a>
         </Link>
       </section>
-        <section id="center" className="h-75 line-height-700 responsive-center-secction-margin">
+        <section id="center" className="h-75 line-height-700 md-responsive-center-secction-margin">
           <Row className="">
-            <Col className="col-12 text-center">
+            <Col className="col-12 text-center fadein__bottom__fast">
               <img className="top-img-size" src="/undraw_code_thinking_1jeh.svg" alt="" />
 
 
             </Col>
-              <Col className="col-12 line-height-350 text-center">
+              <Col className="col-12 line-height-350 text-center fadein__bottom__middle">
                 <h3 class="text-black">Thank you!</h3>
                 <p class="text-black m-0">
                   Im frontend developer.</p>
@@ -38,7 +38,7 @@ export default function Home() {
                 <Button className="contact__button">お問い合わせ</Button>
               </Col>
           </Row>
-          <ul className="text-center p-0">
+          <ul className="text-center p-0 fadein__bottom__slow">
             <span className="mr-2">
             <Link href="https://twitter.com/masayanishigaki">
                 <FontAwesomeIcon className="icon" icon={faTwitter} />
@@ -58,10 +58,10 @@ export default function Home() {
         </section>
         <section id="bottom" className="h-10">
           <Link href="/skills/my-skills">
-          <a className="lower-left">Skills</a>
+          <a className="lower-left">/ Skills</a>
         </Link>
           <Link href="/contact/contact">
-            <a className="lower-right">Contact</a>
+            <a className="lower-right">/ Contact</a>
           </Link>
         </section>
       </Container>

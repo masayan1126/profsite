@@ -20,37 +20,38 @@ export default function showWorks() {
       <Container className="h-100 w-100 mx-auto">
         <section id="top" className="h-10">
           <Link href="/works/my-works">
-            <a className="upper-left">Works</a>
+            <a className="upper-left">/ Works</a>
           </Link>
           <Link href="/">
-            <a className="upper-right">Top</a>
+            <a className="upper-right">/ Top</a>
           </Link>
         </section>
         <section
           id="center"
           className="h-75 line-height-700
-          mt-2 mt-sm-5 mt-md-5 md-responsive-center-secction-margin"
+          md-responsive-center-secction-margin fadein__bottom__fast"
+
         >
           <PageTitle title={"Profile"} />
-          <Row className="">
-            <Col className="mb-2 offset-2 offset-sm-0 offset-md-0  col-8 col-sm-6 col-md-6 col-lg-6 text-right">
-              <img className="prof-img-size" src="/my-image.jpg" alt="私の画像" />
+          <Row className="mx-auto">
+            <Col className="mx-auto col-12 col-sm-6 col-md-6 col-lg-6 img__profile">
+              <img className="prof__img__size" src="/undraw_male_avatar_323b.svg" alt="私の画像" />
             </Col>
-            <Col className="mt-2 mt-sm-5 offset-3 offset-sm-0 offset-md-0 col-8 col-sm-6 col-md-6 col-lg-6 pl-0">
-              <h5 className="text-white ">Im Front end Dev.</h5>
-              <p className="text-white mb-0 font-size-p">Masaya Nishigaki</p>
-              <p className="text-white mb-0 font-size-p">Osaka City</p>
-              <p className="text-white mb-0 font-size-p">age 26</p>
+            <Col className="col-12 col-sm-6 col-md-6 col-lg-6">
+              <h5 className="p__profile">Im Front end Dev.</h5>
+              <p className="p__profile mb-0 font-size-p">Name : Masaya Nishigaki</p>
+              <p className="p__profile mb-0 font-size-p">From : Osaka City</p>
+              <p className="p__profile mb-0 font-size-p">age : 26</p>
             </Col>
 
           </Row>
         </section>
         <section id="bottom" className="h-10">
           <Link href="/skills/my-skills">
-            <a className="lower-left">Skills</a>
+            <a className="lower-left">/ Skills</a>
           </Link>
           <Link href="/contact/contact">
-            <a className="lower-right">Contact</a>
+            <a className="lower-right">/ Contact</a>
           </Link>
         </section>
       </Container>
