@@ -9,7 +9,7 @@ import PageTitle from '../../components/Title'
 
 export default function showWorks() {
   return (
-    <div className="bg-color h-100">
+    <div className="h-100">
       <Head>
         <title>Profile</title>
         <meta
@@ -34,12 +34,11 @@ export default function showWorks() {
         >
           <PageTitle title={"Profile"} />
           <Row className="mx-auto">
-            <Col className="mx-auto col-12 col-sm-6 col-md-6 col-lg-6 img__profile">
+            <Col className="mx-auto pr-sm-0 col-12 col-sm-6 col-md-6 col-lg-6 img__profile">
               <img className="prof__img__size" src="/undraw_male_avatar_323b.svg" alt="私の画像" />
             </Col>
             <Col className="col-12 col-sm-6 col-md-6 col-lg-6">
-              <h5 className="p__profile">Im Front end Dev.</h5>
-              <p className="p__profile mb-0 font-size-p">Name : Masaya Nishigaki</p>
+              <h5 className="p__profile mb-0">Name : Masaya Nishigaki</h5>
               <p className="p__profile mb-0 font-size-p">From : Osaka City</p>
               <p className="p__profile mb-0 font-size-p">age : 26</p>
             </Col>

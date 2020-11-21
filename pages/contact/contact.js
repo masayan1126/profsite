@@ -3,7 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import { Container, Row, Col, Form, Button, Carousel } from "react-bootstrap";
 import React, { useCallback, useState, useEffect } from 'react';
-import { webHookUrl } from "../../components/slack";
+import { WEBHOOK_URL } from "../../webhook/webhookConfig";
 
 export default function showContactForm() {
 
@@ -32,7 +32,7 @@ const submitForm = (username, email, inquiry) => {
   };
 
     // fetchメソッドでフォームの内容をSlackのIncoming Webhook URL に送信する
-    fetch(webHookUrl, {
+    fetch(WEBHOOK_URL, {
         method: 'POST',
         body: JSON.stringify(payload)
     }).then(() => {
@@ -44,7 +44,7 @@ const submitForm = (username, email, inquiry) => {
 
   return (
     <>
-    <div className="bg-color h-100">
+    <div className="h-100">
       <Head>
         <title>Contact</title>
         <meta
@@ -55,15 +55,16 @@ const submitForm = (username, email, inquiry) => {
       <Container className="h-100 w-100 mx-auto">
         <section id="top" className="h-10">
           <Link href="/profile/my-profile">
-            <a className="upper-left">Profile</a>
+            <a className="upper-left">/ Profile</a>
           </Link>
           <Link href="/">
-            <a className="upper-right">Top</a>
+            <a className="upper-right a__link__menu">/ Top</a>
           </Link>
         </section>
         <section
           id="center"
-          className="h-75 line-height-700  text-center mx-auto mt-1"
+            className="h-75 line-height-700 text-center
+            mx-auto mt-1 fadein__bottom__fast"
         >
             <PageTitle title={"Contact"} />
             <div className="login-page">
@@ -94,11 +95,11 @@ const submitForm = (username, email, inquiry) => {
 
         </section>
         <section id="bottom" className="h-10">
-          <Link href="/works/my-works">
-            <a className="lower-left">Works</a>
+          <Link href="/service/my-service">
+            <a className="lower-left">/ Service</a>
           </Link>
           <Link href="/contact/contact">
-            <a className="lower-right">Contact</a>
+            <a className="lower-right">/ Contact</a>
           </Link>
         </section>
       </Container>

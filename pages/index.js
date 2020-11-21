@@ -8,13 +8,13 @@ import { faStore } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   return (
-    <div className="bg-color h-100">
+    <div className="h-100">
       <Head>
         <title>home</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0"></meta>
       </Head>
       <Container className="h-100 w-100 mx-auto">
-      <section id="top" className="h-10">
+        <section id="top" className="h-10">
         <Link href="/profile/my-profile">
           <a className="upper-left">/ Profile</a>
         </Link>
@@ -22,20 +22,20 @@ export default function Home() {
           <a className="upper-right">/ Service</a>
         </Link>
       </section>
-        <section id="center" className="h-75 line-height-700 md-responsive-center-secction-margin">
+        <section id="center" className="h-75 section__top">
           <Row className="">
             <Col className="col-12 text-center fadein__bottom__fast">
-              <img className="top-img-size" src="/undraw_code_thinking_1jeh.svg" alt="" />
-
-
+              <img className="top__img__size" src="/undraw_mobile_development_8gyo.svg" alt="" />
             </Col>
               <Col className="col-12 line-height-350 text-center fadein__bottom__middle">
                 <h3 class="text-black">Thank you!</h3>
                 <p class="text-black m-0">
                   Im frontend developer.</p>
                 <p class="text-black">
-                  This page is my profile site.</p>
-                <Button className="contact__button">お問い合わせ</Button>
+                This page is my profile site.</p>
+                      <Link href="/contact/contact">
+                        <Button className="contact__button">お問い合わせ</Button>
+                      </Link>
               </Col>
           </Row>
           <ul className="text-center p-0 fadein__bottom__slow">

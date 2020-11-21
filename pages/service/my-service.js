@@ -9,7 +9,7 @@ import PageTitle from '../../components/Title'
 
 export default function showWorks(props) {
   return (
-    <div className="bg-color h-100">
+    <div className="h-100">
       <Head>
         <title>Works</title>
         <meta
@@ -28,7 +28,8 @@ export default function showWorks(props) {
         </section>
         <section
           id="center"
-          className="h-75 line-height-700 md-responsive-center-secction-margin"
+          className="h-75 section__service"
+
         >
           <PageTitle title = { "Service" }/>
 

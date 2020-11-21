@@ -10,7 +10,7 @@ import PageTitle from '../../components/Title'
 
 export default function showWorks() {
   return (
-    <div className="bg-color h-100">
+    <div className="h-100">
       <Head>
         <title>Skills</title>
         <meta
@@ -21,10 +21,10 @@ export default function showWorks() {
       <Container className="h-100 w-100 mx-auto">
         <section id="top" className="h-10">
           <Link href="/profile/my-profile">
-            <a className="upper-left">Profile</a>
+            <a className="upper-left">/ Profile</a>
           </Link>
           <Link href="/">
-            <a className="upper-right">Top</a>
+            <a className="upper-right">/ Top</a>
           </Link>
         </section>
         <section
@@ -76,11 +76,11 @@ export default function showWorks() {
           </Row>
         </section>
         <section id="bottom" className="h-10">
-          <Link href="/works/my-works">
-            <a className="lower-left">Works</a>
+          <Link href="/service/my-service">
+            <a className="lower-left">/ Service</a>
           </Link>
           <Link href="/contact/contact">
-            <a className="lower-right">Contact</a>
+            <a className="lower-right">/ Contact</a>
           </Link>
         </section>
       </Container>
