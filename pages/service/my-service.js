@@ -73,9 +73,6 @@ export default function showWorks(props) {
               </Row>
             </Col>
           </Row>
-           <Link href="/my-portfolio">
-            <a className="portfolio__link">/ ポートフォリオはこちら</a>
-          </Link>
         </section>
         <section id="bottom" className="h-10">
           <Link href="/skills/my-skills">
