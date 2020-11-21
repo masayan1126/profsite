@@ -20,10 +20,10 @@ export default function showWorks(props) {
       <Container className="h-100 w-100 mx-auto  text-center">
         <section id="top" className="h-10">
           <Link href="/profile/my-profile">
-            <a className="upper-left">Profile</a>
+            <a className="upper-left">/ Profile</a>
           </Link>
           <Link href="/">
-            <a className="upper-right">Top</a>
+            <a className="upper-right">/ Top</a>
           </Link>
         </section>
         <section
@@ -42,7 +42,7 @@ export default function showWorks(props) {
                 </Col>
                 <Col className="col-6 col-md-12 col-lg-12">
                   <h5 className="mt-4 service__title">Webアプリ開発</h5>
-                  <p className="service__description">aaaaaaaaaaaaaaa</p>
+                  <p className="service__description text-left">小中規模のアプリケーション開発</p>
                 </Col>
               </Row>
             </Col>
@@ -56,7 +56,7 @@ export default function showWorks(props) {
                 </Col>
                 <Col className="col-6 col-md-12 col-lg-12">
                   <h5 className="mt-4 service__title">EC/HP/LP制作</h5>
-                  <p className="service__description">aaaaaaaaaaaaaaaa</p>
+                  <p className="service__description text-left">WordPressでのサイト作成。一からの設計も可能です</p>
                 </Col>
               </Row>
             </Col>
@@ -68,7 +68,7 @@ export default function showWorks(props) {
                 </Col>
                 <Col className="col-6 col-md-12 col-lg-12">
                   <h5 className="mt-4 service__title">SE0対策</h5>
-                  <p className="service__description">aaaaaaaaaaaaaaa</p>
+                  <p className="service__description text-left">成果につながるデザイン設計とコーディングを実施</p>
                 </Col>
               </Row>
             </Col>
@@ -77,10 +77,10 @@ export default function showWorks(props) {
         </section>
         <section id="bottom" className="h-10">
           <Link href="/skills/my-skills">
-            <a className="lower-left">Skills</a>
+            <a className="lower-left">/ Skills</a>
           </Link>
           <Link href="/contact/contact">
-            <a className="lower-right">Contact</a>
+            <a className="lower-right">/ Contact</a>
           </Link>
         </section>
       </Container>

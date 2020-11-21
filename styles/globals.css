@@ -148,24 +148,24 @@ a {
   }
 
   .service__title {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .service__description {
-    font-size: 12px;
+    font-size: 8px;
   }
 
 }
 
 @media screen and (min-width: 767px) {
   .md-responsive-center-secction-margin {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .md-responsive-center-secction-margin {
-    margin-top: 50px !important;
+    margin-top: 40px !important;
   }
 }
 
@@ -177,13 +177,13 @@ a {
   }
 
   .md-responsive-center-secction-margin {
-    margin-top: 200px !important;
+    margin-top: 150px !important;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .md-responsive-center-secction-margin {
-    margin-top: 200px !important;
+    margin-top: 150px !important;
   }
 }
 
