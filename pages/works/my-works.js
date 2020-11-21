@@ -34,41 +34,41 @@ export default function showWorks(props) {
 
           <Row className="text-center">
             <Col
-              className="mb-5 col-12 col-sm-12 mx-auto col-md-4 col-lg-4"
+              className="mb-5 offset-2 col-8 col-sm-12 mx-auto col-md-4 col-lg-4"
             >
-              <Row className="">
-                <Col className="col-6 col-md-12 pr-0 col-lg-12">
+              <Row className="mx-auto">
+                <Col className="col-5 col-md-12 pr-0 col-lg-12">
                   <img className="service__img__size" src="/undraw_web_devices_ad58.svg" alt="" />
                 </Col>
-                <Col className="col-6 col-md-12 col-lg-12">
-                  <h5 className="mt-5 service__title">Webアプリ開発</h5>
-                  <p>aaaaaaaaaaaaaaa</p>
+                <Col className="col-5 col-md-12 col-lg-12">
+                  <h5 className="mt-4 service__title">Webアプリ開発</h5>
+                  <p className="service__description">aaaaaaaaaaaaaaa</p>
                 </Col>
               </Row>
             </Col>
 
             <Col
-              className="mb-5 col-12 col-sm-12 mx-auto col-md-4 col-lg-4"
+              className="mb-5 offset-2 col-8 col-sm-12 mx-auto col-md-4 col-lg-4"
             >
-              <Row className="">
-                <Col className="col-6 col-md-12 pr-0 col-lg-12">
+              <Row className="mx-auto">
+                <Col className="col-5 col-md-12 pr-0 col-lg-12">
                   <img className="service__img__size" src="/undraw_wordpress_utxt.svg" alt="" />
                 </Col>
-                <Col className="col-6 col-md-12 col-lg-12">
-                  <h5 className="mt-5 service__title">EC/HP/LP制作</h5>
-                  <p>aaaaaaaaaaaaaaaa</p>
+                <Col className="col-5 col-md-12 col-lg-12">
+                  <h5 className="mt-4 service__title">EC/HP/LP制作</h5>
+                  <p className="service__description">aaaaaaaaaaaaaaaa</p>
                 </Col>
               </Row>
             </Col>
 
-            <Col className="mb-5 col-12 col-sm-12 mx-auto col-md-4 col-lg-4">
-              <Row className="">
-                <Col className="col-6 col-md-12 col-lg-12 pr-0">
+            <Col className="mb-5 offset-2 col-8 col-sm-12 mx-auto col-md-4 col-lg-4">
+              <Row className="mx-auto">
+                <Col className="col-5 col-md-12 col-lg-12 pr-0">
                   <img className="service__img__size" src="/undraw_search_engines_nn9e.svg" alt="" />
                 </Col>
-                <Col className="col-6 col-md-12 col-lg-12">
-                  <h5 className="mt-5 service__title">SE0対策</h5>
-                  <p>aaaaaaaaaaaaaaa</p>
+                <Col className="col-5 col-md-12 col-lg-12">
+                  <h5 className="mt-4 service__title">SE0対策</h5>
+                  <p className="service__description">aaaaaaaaaaaaaaa</p>
                 </Col>
               </Row>
             </Col>

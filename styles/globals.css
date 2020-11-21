@@ -140,7 +140,24 @@ a {
   margin-top: 100px;
 }
 
-@media screen and (max-width: 767px) {
+
+/* スマホ */
+@media screen and (max-width: 766px) {
+  .md-responsive-center-secction-margin {
+    margin-top: 0px;
+  }
+
+  .service__title {
+    font-size: 16px;
+  }
+
+  .service__description {
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (min-width: 767px) {
   .md-responsive-center-secction-margin {
     margin-top: 60px;
   }
