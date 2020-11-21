@@ -30,7 +30,7 @@ const submitForm = (username, email, inquiry) => {
             + '【問い合わせ内容】\n' + inquiry
   };
 
-    const url = "https://hooks.slack.com/services/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"
+    const url = "https://hooks.slack.com/services/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"
 
     // fetchメソッドでフォームの内容をSlackのIncoming Webhook URL に送信する
     fetch(url, {
