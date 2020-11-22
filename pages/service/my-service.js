@@ -31,7 +31,7 @@ export default function showWorks(props) {
           className="h-75 section__service"
 
         >
-          <PageTitle title = { "Service" }/>
+          <h2 className= "text-center mb-3">Service</h2>
 
           <Row className="text-center">
             <Col

@@ -29,9 +29,9 @@ export default function showWorks() {
         </section>
         <section
           id="center"
-          className="h-75 mx-auto mt-5"
+          className="h-75 mx-auto section__portfolio text-center"
         >
-          <PageTitle title={"Portfolio"} />
+          <h2 className= "text-center mb-5">Portfolio</h2>
 
           <Row className="">
             <Col

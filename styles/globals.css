@@ -162,9 +162,9 @@ a {
 
 /* 縦向きモバイル */
 @media screen and (max-width: 575px) {
-  .page__title {
-    margin-bottom: 30px;
-  }
+  /* .page__title {
+    margin-bottom: 10px;
+  } */
 
   .section__top {
     margin-top: 50px;
@@ -202,9 +202,16 @@ a {
 
   .img__profile {
     text-align: center;
+    line-height: 236px;
   }
 
+  .section__contact {
+    margin-top: 30px;
+  }
 
+  .section__portfolio {
+    margin-top: 10px;
+  }
 
 }
 
@@ -213,9 +220,9 @@ a {
 /* 横向きモバイル */
 @media screen and (min-width: 576px) {
 
-  .page__title {
+  /* .page__title {
     margin-bottom: 30px;
-  }
+  } */
 
   .section__top {
     margin-top: 100px;
@@ -241,124 +248,15 @@ a {
     max-width: 500px !important;
   }
 
-}
-
-@media (min-width: 576px) and (max-width: 767px){
-  .service__title {
-    font-size: 18px;
+  .p__profile {
+    text-align: left;
+    font-size: 14px !important;
   }
 
-  .service__description {
-    font-size: 12px;
-  }
-}
-
-/* タブレット */
-@media screen and (min-width: 768px) {
-  .section__top {
-    margin-top: 90px;
+  .section__contact {
+    margin-top: 80px;
   }
 
-  .section__service {
-    margin-top: 130px;
-  }
-
-  .service__img__size {
-    width: 100%;
-    height: 100%;
-
-  }
-
-  .img__profile {
-    text-align: right;
-  }
-
-  .c__portfolio {
-    max-width: 500px !important;
-  }
-
-}
-
-/* PC */
-@media screen and (min-width: 992px) {
-  .section__service {
-    margin-top: 10px;
-  }
-
-  .c__portfolio {
-    max-width: 500px !important;
-  }
-
-}
-
-/* ワイドモニター */
-@media screen and (min-width: 1200px) {
-  .section__top {
-    margin-top: 50px;
-  }
-
-  .top__img__size {
-    max-height: 400px;
-    max-width: 700px;
-  }
-
-  .section__service {
-    margin-top: 10px;
-  }
-
-}
-
-/* @media screen and (max-width: 765px) {
-  .md-responsive-center-secction-margin {
-    margin-top: 10px;
-  }
-
-
-}
-
-@media screen and (max-width: 766px) {
-  .md-responsive-center-secction-margin {
-    margin-top: 10px;
-  }
-
-
-
-
-}
-
-@media screen and (min-width: 767px) {
-  .md-responsive-center-secction-margin {
-    margin-top: 40px;
-  }
-
-
-
-  .page__title {
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .md-responsive-center-secction-margin {
-    margin-top: 40px !important;
-  }
-}
-
-@media screen and (min-width: 768px) {
-
-
-
-
-
-}
-
-@media screen and (min-width: 1200px) {
-  .md-responsive-center-secction-margin {
-    margin-top: 130px !important;
-  }
-} */
-
-@media screen and (min-width: 540px) {
   .upper-left{
     position:fixed;
     left:50px;
@@ -392,30 +290,93 @@ a {
     opacity:0.7;
   }
 
- }
-
-.fade-enter {
-  opacity: 0;
 }
-.fade-enter-active {
+
+@media (min-width: 576px) and (max-width: 767px){
+  .service__title {
+    font-size: 18px;
+  }
+
+  .service__description {
+    font-size: 12px;
+  }
+
+ .section__portfolio {
+    margin-top: 40px;
+  }
+
+}
+
+/* タブレット */
+@media screen and (min-width: 768px) {
+  .section__top {
+    margin-top: 90px;
+  }
+
+  .section__service {
+    margin-top: 130px;
+  }
+
+  .service__img__size {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .img__profile {
+    text-align: right;
+  }
+
+  .c__portfolio {
+    max-width: 500px !important;
+  }
+
+}
+
+/* PC */
+@media screen and (min-width: 992px) {
+  .section__service {
+    margin-top: 150px;
+  }
+
+  .c__portfolio {
+    max-width: 500px !important;
+  }
+
+
+}
+
+/* ワイドモニター */
+@media screen and (min-width: 1200px) {
+  .section__top {
+    margin-top: 50px;
+  }
+
+  .top__img__size {
+    max-height: 400px;
+    max-width: 700px;
+  }
+
+  .section__service {
+    margin-top: 150px;
+  }
+
+}
+
+/* .fade-enter {
+  opacity: 0;
+} */
+/* .fade-enter-active {
   transition: all .2s ease-in-out;
   opacity: 1;
-}
-.fade-exit {
-  opacity: 1; /* opacityの規定値は1だが、省略不可 */
-}
-.fade-exit-active {
+} */
+/* .fade-exit {
+  opacity: 1;
+} */
+/* .fade-exit-active {
   transition: all .2s ease-in-out;
   opacity: 0;
-}
-
-.text-daffodil {
-  color: #E6DF44;
-}
-
-.bg-daffodil {
-  background-color: #E6DF44 !important;
-}
+} */
 
 canvas {
   margin: 0 auto;
@@ -441,6 +402,7 @@ canvas {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
+  border-radius: 30px !important;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.24);
 }
 .form input {

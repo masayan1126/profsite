@@ -32,7 +32,7 @@ export default function showWorks() {
           section__profile fadein__bottom__fast"
 
         >
-          <PageTitle title={"Profile"} />
+          <h2 className= "text-center"></h2>
           <Row className="mx-auto">
             <Col className="mx-auto col-12 col-sm-6 col-md-6 col-lg-6 img__profile">
               <img className="prof__img__size" src="/undraw_male_avatar_323b.svg" alt="私の画像" />
@@ -41,7 +41,7 @@ export default function showWorks() {
               <h5 className="mb-0">Masaya Nishigaki</h5>
               <p className="mb-0 font-size-p">Osaka City</p>
               <p className="mb-0 font-size-p">age : 26</p>
-              <p className="mb-0 font-size-p">Javascript、PHPなど</p>
+              <p className="mb-0 font-size-p">Javascript、PHPなどが得意です</p>
 
             </Col>
 

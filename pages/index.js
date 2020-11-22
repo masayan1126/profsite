@@ -25,7 +25,7 @@ export default function Home() {
         <section id="center" className="h-75 section__top">
           <Row className="">
             <Col className="col-12 text-center fadein__bottom__fast">
-              <img className="top__img__size" src="/undraw_mobile_development_8gyo.svg" alt="" />
+              <img className="top__img__size" src="/undraw_version_control_9bpv.svg" alt="" />
             </Col>
               <Col className="col-12 line-height-350 text-center fadein__bottom__middle">
                 <h3 class="text-black">Thank you!</h3>

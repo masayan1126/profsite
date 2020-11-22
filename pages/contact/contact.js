@@ -63,13 +63,13 @@ const submitForm = (username, email, inquiry) => {
         </section>
         <section
           id="center"
-            className="h-75 line-height-700 text-center
-            mx-auto mt-1 fadein__bottom__fast"
+            className="h-75 section__contact text-center
+            mx-auto fadein__bottom__fast"
         >
 
             <div className="login-page">
             <div className="form">
-              <PageTitle title={"Contact"} />
+              <h2 className= "text-center mb-5">Contact</h2>
             <Form className="text-left">
               <Form.Group controlId="exampleForm.ControlInput1">
                 <Form.Label>お名前</Form.Label>
