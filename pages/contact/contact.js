@@ -3,7 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import { Container, Row, Col, Form, Button, Carousel } from "react-bootstrap";
 import React, { useCallback, useState, useEffect } from 'react';
-// import { WEBHOOK_URL } from "../../webhook/webhookConfig";
+import { WEBHOOK_URL } from "../../webhook/webhookConfig";
 
 export default function showContactForm() {
 
@@ -69,7 +69,7 @@ const submitForm = (username, email, inquiry) => {
 
             <div className="login-page">
             <div className="form">
-              <h2 className= "text-center mb-5">Contact</h2>
+              {/* <h2 className= "text-center mb-5">Contact</h2> */}
             <Form className="text-left">
               <Form.Group controlId="exampleForm.ControlInput1">
                 <Form.Label>お名前</Form.Label>
@@ -88,7 +88,10 @@ const submitForm = (username, email, inquiry) => {
                       onChange={inputInquiry}
                     />
               </Form.Group>
-              <Button onClick={() => submitForm(username, email, inquiry )} className="contact__button">お問い合わせ</Button>
+                <div className="text-right">
+                  <Button onClick={() => submitForm(username, email, inquiry)} className="subbmit__button">送信する
+                </Button>
+                </div>
             </Form>
 
           </div>

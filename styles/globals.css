@@ -58,6 +58,15 @@ a {
   margin-bottom: 15px;
 }
 
+.subbmit__button {
+  background-color: #ffd803 !important;
+  border: #ffd803 !important;
+  color:#272343 !important;
+  height: 35px;
+  width: 90px;
+  margin-bottom: 15px;
+}
+
 /* ツイッターなどのアイコン */
 .icon {
   color: #272343 !important;
