@@ -1,113 +1,62 @@
-import PageTitle from '../../components/Title'
-import Link from "next/link";
-import Head from "next/head";
-import { Container, Row, Col, Form, Button, Carousel } from "react-bootstrap";
-import React, { useCallback, useState, useEffect } from 'react';
-import { WEBHOOK_URL } from "../../webhook/webhookConfig";
+import React, { Component } from "react";
 
-export default function showContactForm() {
+const firebase = require("firebase");
+require("firebase/functions");
 
-const [username, setUsername] = useState(''),
-    [email, setEmail] = useState(''),
-  [inquiry, setInquiry] = useState('');
-
-const inputUsername = useCallback((event) => {
-  setUsername(event.target.value)
-},[setUsername]);
-
-const inputEmail = useCallback((event) => {
-  setEmail(event.target.value)
-},[setEmail]);
-
-const inputInquiry = useCallback((event) => {
-  setInquiry(event.target.value)
-},[setInquiry]);
-
-const submitForm = (username, email, inquiry) => {
-  const payload = {
-        text: 'お問い合わせがありました\n'
-            + 'お名前: ' + username + '\n'
-            + 'メールアドレス: ' + email + '\n'
-            + '【問い合わせ内容】\n' + inquiry
-  };
-
-    // fetchメソッドでフォームの内容をSlackのIncoming Webhook URL に送信する
-    fetch(WEBHOOK_URL, {
-        method: 'POST',
-        body: JSON.stringify(payload)
-    }).then(() => {
-        alert('送信が完了しました。追ってご連絡いたします');
-        setInquiry("")
-    })
+class ContactForm extends Component {
+  constructor() {
+    super();
+    this.onSubmit = this.onSubmit.bind(this);
   }
 
+  onSubmit(e) {
+    e.preventDefault();
+    let data = {};
+    data.name = e.target.name.value;
+    data.email = e.target.email.value;
+    data.content = e.target.content.value;
+    let sendMail = firebase.functions().httpsCallable("sendMail");
+    sendMail(data);
+    e.target.name.value = "";
+    e.target.email.value = "";
+    e.target.content.value = "";
+    e.target.value = "";
+  }
 
-  return (
-    <>
-    <div className="h-100">
-      <Head>
-        <title>Contact</title>
-        <meta
-          name="viewport"
-          content="width=device-width,initial-scale=1.0"
-        ></meta>
-      </Head>
-      <Container className="h-100 w-100 mx-auto">
-        <section id="top" className="h-10">
-          <Link href="/profile/my-profile">
-            <a className="upper-left">/ Profile</a>
-          </Link>
-          <Link href="/">
-            <a className="upper-right a__link__menu">/ Top</a>
-          </Link>
-        </section>
-        <section
-          id="center"
-            className="h-75 section__contact text-center
-            mx-auto fadein__bottom__fast"
-        >
+  render() {
+    const textFieldStyle = {
+      display: "flex",
+      width: "300px",
+    };
 
-            <div className="login-page">
-            <div className="form">
-              {/* <h2 className= "text-center mb-5">Contact</h2> */}
-            <Form className="text-left">
-              <Form.Group controlId="exampleForm.ControlInput1">
-                <Form.Label>お名前</Form.Label>
-                    <Form.Control type="name" placeholder="name" value={username}
-                      onChange={inputUsername} />
-              </Form.Group>
-              <Form.Group controlId="exampleForm.ControlInput1">
-                <Form.Label>メールアドレス</Form.Label>
-                    <Form.Control type="email" placeholder="mail@example.com" value={email}
-                      onChange={inputEmail}
-                    />
-              </Form.Group>
-              <Form.Group controlId="exampleForm.ControlTextarea1">
-                <Form.Label>お問い合わせ内容</Form.Label>
-                    <Form.Control as="textarea" rows={2} value={inquiry}
-                      onChange={inputInquiry}
-                    />
-              </Form.Group>
-                <div className="text-right">
-                  <Button onClick={() => submitForm(username, email, inquiry)} className="subbmit__button">送信する
-                </Button>
-                </div>
-            </Form>
+    const contactForm = {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      marginTop: "100px",
+    };
 
-          </div>
-          </div>
-
-        </section>
-        <section id="bottom" className="h-10">
-          <Link href="/service/my-service">
-            <a className="lower-left">/ Service</a>
-          </Link>
-          <Link href="/contact/contact">
-            <a className="lower-right">/ Contact</a>
-          </Link>
-        </section>
-      </Container>
-    </div>
-    </>
-  )
+    return (
+      <React.Fragment>
+        <div style={contactForm}>
+          <h2>お問い合わせ</h2>
+          <form onSubmit={this.onSubmit}>
+            <input name="name" label="お名前" type="text" />
+            <input name="email" label="メールアドレス" type="mail" required />
+            <input
+              required
+              name="content"
+              label="お問い合わせ内容"
+              margin="normal"
+            />
+            <button color="primary" type="submit">
+              送信
+            </button>
+          </form>
+        </div>
+      </React.Fragment>
+    );
+  }
 }
+
+export default ContactForm;

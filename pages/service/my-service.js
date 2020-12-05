@@ -79,8 +79,8 @@ export default function showWorks(props) {
           <Link href="/portfolio/my-portfolio">
             <a className="lower-left">/ Portfolio</a>
           </Link>
-          <Link href="/contact/contact">
-            <a className="lower-right">/ Contact</a>
+          <Link href="/service/my-service">
+            <a className="lower-right color__yellow">/ Service</a>
           </Link>
         </section>
       </Container>

@@ -60,8 +60,8 @@ export default function Home() {
           <Link href="/portfolio/my-portfolio">
           <a className="lower-left">/ Portfolio</a>
         </Link>
-          <Link href="/contact/contact">
-            <a className="lower-right">/ Contact</a>
+          <Link href="/">
+            <a className="lower-right color__yellow">/ Top</a>
           </Link>
         </section>
       </Container>

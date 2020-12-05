@@ -28,20 +28,28 @@ export default function showWorks() {
         </section>
         <section
           id="center"
-          className="h-75 line-height-700
+          className="h-75
           section__profile fadein__bottom__fast"
 
         >
           <h2 className= "text-center"></h2>
           <Row className="mx-auto">
-            <Col className="mx-auto col-12 col-sm-6 col-md-6 col-lg-6 img__profile">
-              <img className="prof__img__size" src="/undraw_male_avatar_323b.svg" alt="私の画像" />
+            <Col className="mx-auto col-12 col-sm-10 col-md-6 col-lg-6 img__profile">
+              <img className="prof__img__size" src="/profile_image.jpg" alt="私の画像" />
             </Col>
-            <Col className="col-12 col-sm-6 col-md-6 col-lg-6 p__profile">
-              <h5 className="mb-0">Masaya Nishigaki</h5>
-              <p className="mb-0 font-size-p">Osaka City</p>
-              <p className="mb-0 font-size-p">age : 26</p>
-              <p className="mb-0 font-size-p">Javascript、PHPなどが得意です</p>
+            <Col className="col-12 col-sm-10 col-md-6 col-lg-6 p__profile">
+              <h5 className="">Name<span className="ml-2 mb-0 font-size-p">Masaya Nishigaki</span></h5>
+              <hr/>
+              <h5 className="mb-0">Address<span className="ml-2 mb-0 font-size-p">Osaka City</span></h5>
+              <hr/>
+              <h5 className="mb-0">age<span className="ml-2 mb-0 font-size-p">27</span></h5>
+              <hr />
+
+              <h5 className="mb-0">Email<span className="ml-2 mb-0 font-size-p">masa199311266@gmail.com</span></h5>
+              <hr />
+
+              <h5 className="mb-0">Skill<span className="ml-2 mb-0 font-size-p">Javascript、PHP</span></h5>
+              <hr/>
 
             </Col>
 
@@ -51,8 +59,8 @@ export default function showWorks() {
           <Link href="/portfolio/my-portfolio">
             <a className="lower-left">/ Portfolio</a>
           </Link>
-          <Link href="/contact/contact">
-            <a className="lower-right">/ Contact</a>
+          <Link href="/profile/my-profile">
+            <a className="lower-right color__yellow">/ Profile</a>
           </Link>
         </section>
       </Container>

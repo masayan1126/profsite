@@ -79,8 +79,8 @@ export default function showWorks() {
           <Link href="/service/my-service">
             <a className="lower-left">/ Service</a>
           </Link>
-          <Link href="/contact/contact">
-            <a className="lower-right">/ Contact</a>
+          <Link href="/portfolio/my-portfolio">
+            <a className="lower-right color__yellow">/ Portfolio</a>
           </Link>
         </section>
       </Container>
